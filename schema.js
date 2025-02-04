@@ -30,24 +30,24 @@ const BlogPostSchema = new mongoose.Schema({
   },
   tags: {
     type: [String],
-    default: []
+    default: [],
   },
   category: {
     type: String,
-    default: 'General'
+    default: 'General',
   },
   likes: {
     type: [String],
-    default: []
+    default: [],
   },
   comments: [CommentSchema],
   createdAt: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   },
   updatedAt: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   }
 });
 
